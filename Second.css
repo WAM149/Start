@@ -1,0 +1,76 @@
+body{
+	font-family:arial;
+	margin:0;
+}
+h1{
+	color:#AD8900;
+}
+a{
+	color:#000;
+}
+
+
+header{
+
+	background:#241773;
+	color:#AD8900;
+	padding:15px 15px 0 15px
+}
+header h1{
+	
+	margin:0;
+	display:inline;
+
+}
+
+nav ul{
+	margin: 0;
+	display: inline;
+}
+
+nav ul li{
+		background:#AD8900;
+		display: inline-block;
+		list-style-type: none;
+		padding: 5px 15px;
+
+}
+nav ul li:hover{
+	background:#999;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+
+  /* make the list items unselectable */
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
