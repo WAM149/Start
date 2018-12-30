@@ -8,12 +8,21 @@
 	<div id="login-box">
 		<div class="left-box">
 			<h1>Start Your Free Account Today</h1>
-				<input type="text" name="username" placeholder="Username"/>
-				<input type="text" name="password" placeholder="Password"/>
-				<input type="text" name="password2" placeholder="Retype Password"/>
-				<input type="submit" name="signup-button" placeholder="Create Your Account"/>
+				<input type="text" name="username" placeholder="Username" required="required">
+				<input type="password" name="password" id="password" placeholder="Password" required="required"/>
+				<input type="password" name="password_confirm" id="password_confirm" placeholder="Confirm Password" required="required" oninput="check(this)"/>
+				<input type="submit" name="signup-button" placeholder="Create Your Account">
 		</div>
 	</div>
-
+	<script language="javascript" type="text/javascript">
+		function check(input) {
+			if (input.value != document.getElementById('password').value) {
+				input.setCustomValidity('Password Must be Matching.');
+			} else {
+				//input is valid -- reset the error message
+				input.setCustomValidity('')
+			}
+		}
+	</script>
 </body>
 </html>
